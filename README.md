@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a web application that allows users to search for movies by title and filter by genre. It uses the OMDb API to fetch movie data and displays the search results in a responsive grid layout. Users can click on a movie poster to view more details about the selected movie.
+The Movie Explorer application was developed using a client-server architecture. The server-side was implemented using Node.js with Express.js framework, while the client-side was developed using React.js library.
 
 ## Preview
 
