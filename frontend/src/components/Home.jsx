@@ -26,7 +26,7 @@ function Home() {
         e.preventDefault();
       }
 
-      const response = await axios.get(`${REACT_APP_SERVER_URL}/api/movies`, {
+      const response = await axios.get(`${REACT_APP_SERVER_URL}api/movies`, {
         params: { title: query, genre: selectedGenre, page: pageno },
       });
       setMovies(response.data.movies);
