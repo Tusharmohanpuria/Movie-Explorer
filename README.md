@@ -78,7 +78,7 @@ The React app will open in your default browser at http://localhost:3000.
    cd backend
    npm install
 
-Deployed the backend a service on render.com.
+Deployed the backend as a service on render.com.
 
 #### Frontend
 
@@ -87,4 +87,4 @@ Deployed the backend a service on render.com.
    cd frontend
    npm run build
 
-Deploy the dist folder as static site on render.com.
+Deploy the dist folder as a static site on render.com.
