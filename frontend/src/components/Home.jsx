@@ -16,6 +16,8 @@ function Home() {
   const [totalResults, setTotalResults] = useState(localStorage.getItem('savedTotalResults') || 0);
   const [loading, setLoading] = useState(false);
 
+  const SERVER_URL = process.env.SERVER_URL;
+
   const searchMovies = async (e, pageno = 1) => {
     try {
       setLoading(true); 
@@ -24,7 +26,7 @@ function Home() {
         e.preventDefault();
       }
 
-      const response = await axios.get('http://localhost:5000/api/movies', {
+      const response = await axios.get(`${SERVER_URL}/api/movies`, {
         params: { title: query, genre: selectedGenre, page: pageno },
       });
       setMovies(response.data.movies);

@@ -6,10 +6,12 @@ function MovieDetails() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
 
+  const SERVER_URL = process.env.SERVER_URL;
+
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/movie/${id}`);
+        const response = await axios.get(`${SERVER_URL}/api/movie/${id}`);
         setMovie(response.data);
       } catch (error) {
         console.error("Error fetching movie details:", error);
