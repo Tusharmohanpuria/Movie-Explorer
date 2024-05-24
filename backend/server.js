@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const API_KEY = 'bcd4b452';
+const API_KEY = process.env.API_KEY;
 const BASE_URL = 'http://www.omdbapi.com/';
 const MOVIES_PER_PAGE = 10;
 
@@ -97,6 +97,8 @@ app.get('/api/movie/:id', async (req, res) => {
     }
 });
 
-app.listen(5000, () => {
-    console.log('Server running on port 5000');
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
+
