@@ -6,12 +6,12 @@ function MovieDetails() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
 
-  const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
+  const SERVER_URL = "https://movie-explorer-bybz.onrender.com";
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get(`${REACT_APP_SERVER_URL}/api/movie/${id}`);
+        const response = await axios.get(`${SERVER_URL}/api/movie/${id}`);
         setMovie(response.data);
       } catch (error) {
         console.error("Error fetching movie details:", error);
