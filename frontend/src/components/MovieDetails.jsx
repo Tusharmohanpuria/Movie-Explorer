@@ -11,11 +11,7 @@ function MovieDetails() {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-<<<<<<< HEAD
         const response = await axios.get(`${SERVER_URL}/api/movie/${id}`);
-=======
-        const response = await axios.get(`${REACT_APP_SERVER_URL}api/movie/${id}`);
->>>>>>> 58caf0c2905aafb2bcd1579222ed9b603b3516d2
         setMovie(response.data);
       } catch (error) {
         console.error("Error fetching movie details:", error);
