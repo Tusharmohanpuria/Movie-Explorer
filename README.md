@@ -6,7 +6,7 @@ This is a web application that allows users to search for movies by title and fi
 
 ## Live Demo
 
-You can check out the live demo of the Movie Explorer app at: https://tinyurl.com/Movie-Explorer-App
+You can check out the live demo of the Movie Explorer app at: [Movie Explorer App](https://tinyurl.com/Movie-Explorer-App)
 
 ## Technologies Used
 
@@ -88,7 +88,3 @@ Deployed the backend a service on render.com.
    npm run build
 
 Deploy the dist folder as static site on render.com.
-
-Deployment link: [Movie Explorer App](https://tinyurl.com/Movie-Explorer-App)
-
-
