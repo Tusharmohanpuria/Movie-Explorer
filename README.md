@@ -71,7 +71,7 @@ The server will start running at http://localhost:5000.
 The React app will open in your default browser at http://localhost:3000.
 
 ### Deployment
-## Backend
+#### Backend
 
 1. Build the backend server:
    ```bash
@@ -80,7 +80,7 @@ The React app will open in your default browser at http://localhost:3000.
 
 Deployed the backend a service on render.com.
 
-## Frontend
+#### Frontend
 
 1. Build the React app for production:
    ```bash
