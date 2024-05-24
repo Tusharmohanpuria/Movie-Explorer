@@ -4,6 +4,14 @@
 
 This is a web application that allows users to search for movies by title and filter by genre. It uses the OMDb API to fetch movie data and displays the search results in a responsive grid layout. Users can click on a movie poster to view more details about the selected movie.
 
+## Preview
+
+### Home Page
+![Home Page](Home.png)
+
+### Movie Details Page
+![Movie Details Page](MovieDetails.png)
+
 ## Live Demo
 
 You can check out the live demo of the Movie Explorer app at: [Movie Explorer App](https://tinyurl.com/Movie-Explorer-App)
